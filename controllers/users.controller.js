@@ -91,7 +91,7 @@ const updateUser = async (req, res) => {
     }
     res.json({
       success: true,
-      message: "Userbupdated succesfully!",
+      message: "User updated successfully!",
       user: updateUser,
     });
   } catch (error) {
@@ -110,7 +110,7 @@ const deletUser = async (res, req) => {
     if (!deletedUser) {
       return res.status(404).json({ message: "User not found" });
     }
-    res.json({ message: "User deleted succesfully", deletedUser });
+    res.json({ message: "User deleted successfully", deletedUser });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Internal Server Error"});
